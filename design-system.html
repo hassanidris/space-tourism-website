@@ -28,7 +28,7 @@
       <h1 class="uppercase">Design system</h1>
 
       <section id="colors">
-        <h2 class="uppercase"><span>01</span> colors</h2>
+        <h2 class="numbered-title"><span>01 </span>colors</h2>
         <div class="flex">
           <div style="flex-grow: 1">
             <div
@@ -64,55 +64,69 @@
       </section>
 
       <section id="typography" style="margin: 4rem 0">
-        <h2 class="uppercase"><span>02</span> typography</h2>
+        <h2 class="numbered-title"><span>02 </span>typography</h2>
 
         <div class="flex">
-          <div style="flex-basis: 100%">
+          <div class="flow" style="flex-basis: 100%; --flow-space: 4rem">
             <div>
-              <p>Heading 1 - Bellefair Regular - 150px</p>
-              <p class="fs-900">EARTH</p>
+              <p class="text-accent">Heading 1 - Bellefair Regular - 150px</p>
+              <p class="fs-900 ff-serif uppercase">EARTH</p>
             </div>
             <div>
-              <p>Heading 2 - Bellefair Regular - 100px</p>
-              <p>VENUS</p>
+              <p class="text-accent">Heading 2 - Bellefair Regular - 100px</p>
+              <p class="fs-800 ff-serif uppercase">VENUS</p>
             </div>
             <div>
-              <p>Heading 3 - Bellefair Regular - 56px</p>
-              <p>JUPITER & SATURN</p>
+              <p class="text-accent">Heading 3 - Bellefair Regular - 56px</p>
+              <p class="fs-700 ff-serif uppercase">JUPITER & SATURN</p>
             </div>
             <div>
-              <p>Heading 4 - Bellefair Regular - 32px</p>
-              <p>URANUS, NEPTUNE, & PLUTO</p>
+              <p class="text-accent">Heading 4 - Bellefair Regular - 32px</p>
+              <p class="fs-600 ff-serif uppercase">URANUS, NEPTUNE, & PLUTO</p>
             </div>
             <div>
-              <p>
+              <p class="text-accent">
                 Heading 5 - Barlow Condensed Regular - 28px - 4.75 Character
                 Space
               </p>
-              <p>SO, YOU WANT TO TRAVEL TO SPACE</p>
+              <p
+                class="
+                  fs-500
+                  ff-sans-cond
+                  letter-spacing-1
+                  text-accent
+                  uppercase
+                "
+              >
+                SO, YOU WANT TO TRAVEL TO SPACE
+              </p>
             </div>
           </div>
-          <div style="flex-basis: 100%">
+          <div class="flow" style="flex-basis: 100%; --flow-space: 4rem">
             <div>
-              <p>Subheading 1 - Bellefair Regular - 28px</p>
-              <p>384,400 km</p>
+              <p class="text-accent">Subheading 1 - Bellefair Regular - 28px</p>
+              <p class="fs-500 ff-serif uppercase">384,400 km</p>
             </div>
             <div>
-              <p>
+              <p class="text-accent">
                 Subheading 2 - Barlow Condensed Regular - 14px - 2.35 Character
                 Space
               </p>
-              <p>AVG. DISTANCE</p>
+              <p class="fs-300 ff-sans-cond letter-spacing-3 uppercase">
+                AVG. DISTANCE
+              </p>
             </div>
             <div>
-              <p>
+              <p class="text-accent">
                 Nav Text - Barlow Condensed Regular - 16px - 2.7 Character Space
               </p>
-              <p>EUROPA</p>
+              <p class="fs-400 ff-sans-cond letter-spacing-2 uppercase">
+                EUROPA
+              </p>
             </div>
             <div>
-              <p>Body Text</p>
-              <p>
+              <p class="text-accent">Body Text</p>
+              <p class="fs-400 ff-sans-cond">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi
                 neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium,
@@ -128,6 +142,110 @@
                 Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel,
                 dapibus id, mattis vel, nisi.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="flow" id="interactive-elements">
+        <h2 class="numbered-title"><span>03 </span>interactive elements</h2>
+
+        <!-- navigation -->
+        <div>
+          <nav>
+            <ul class="primary-navigation flex underline-indicators">
+              <li class="active">
+                <a class="uppercase text-white letter-spacing-2" href="#"
+                  ><span>00</span>Active</a
+                >
+              </li>
+              <li>
+                <a class="uppercase text-white letter-spacing-2" href="#"
+                  ><span>01</span>Hovered</a
+                >
+              </li>
+              <li>
+                <a class="uppercase text-white letter-spacing-2" href="#"
+                  ><span>02</span>Idle</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex">
+          <div style="margin-top: 5rem">
+            <!-- explore button -->
+            <a
+              href="#"
+              class="large-button uppercase ff-serif text-dark bg-white fs-600"
+              >explore</a
+            >
+          </div>
+
+          <div class="flow" style="margin-bottom: 50vh; --flow-space: 4rem">
+            <!-- tabs -->
+            <div class="tab-list underline-indicators flex">
+              <button
+                aria-selected="true"
+                class="
+                  uppercase
+                  ff-sans-cond
+                  text-accent
+                  bg-dark
+                  letter-spacing-2
+                "
+              >
+                Moon
+              </button>
+              <button
+                aria-selected="false"
+                class="
+                  uppercase
+                  ff-sans-cond
+                  text-accent
+                  bg-dark
+                  letter-spacing-2
+                "
+              >
+                Mars
+              </button>
+              <button
+                aria-selected="false"
+                class="
+                  uppercase
+                  ff-sans-cond
+                  text-accent
+                  bg-dark
+                  letter-spacing-2
+                "
+              >
+                Europa
+              </button>
+            </div>
+
+            <!-- dots -->
+            <div class="dot-indicators flex">
+              <button aria-selected="true">
+                <span class="sr-only">Slide title</span>
+              </button>
+              <button aria-selected="false">
+                <span class="sr-only">Slide title</span>
+              </button>
+              <button aria-selected="false">
+                <span class="sr-only">Slide title</span>
+              </button>
+            </div>
+
+            <!-- numbers -->
+            <div class="number-indicators flex" style="flex-direction: column">
+              <button aria-selected="true">
+                <span>1</span>
+              </button>
+              <button aria-selected="false">
+                <span>2</span>
+              </button>
+              <button aria-selected="false">
+                <span>3</span>
+              </button>
             </div>
           </div>
         </div>
